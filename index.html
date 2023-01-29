@@ -1,0 +1,18 @@
+<html>
+<header>
+	<meta charset="UTF-8">
+	<title>Sample</title>
+</header>
+<body>
+	<input type="text" id="float" value="" >
+</body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="jquery.tusfloat.js"></script>
+<script>
+$("#float").keyup(function(){
+	$(this).tusfloat({
+		decimal: 2
+	});
+});
+</script>
+</html>
