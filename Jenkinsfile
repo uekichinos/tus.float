@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Pre-install') {
+      steps {
+        sh 'php --version'
+      }
+    }
+
   }
 }
